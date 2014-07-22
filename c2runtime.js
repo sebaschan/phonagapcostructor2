@@ -15676,30 +15676,6 @@ cr.getProjectModel = function() { return [
 	null,
 	[
 	[
-		cr.plugins_.TiledBg,
-		false,
-		true,
-		true,
-		true,
-		true,
-		true,
-		true,
-		true,
-		true
-	]
-,	[
-		cr.plugins_.Text,
-		false,
-		true,
-		true,
-		true,
-		true,
-		true,
-		true,
-		true,
-		false
-	]
-,	[
 		cr.plugins_.Touch,
 		true,
 		false,
@@ -15713,6 +15689,30 @@ cr.getProjectModel = function() { return [
 	]
 ,	[
 		cr.plugins_.Sprite,
+		false,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		false
+	]
+,	[
+		cr.plugins_.TiledBg,
+		false,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true
+	]
+,	[
+		cr.plugins_.Text,
 		false,
 		true,
 		true,
@@ -15863,7 +15863,7 @@ cr.getProjectModel = function() { return [
 				]
 			]
 ,			[
-				[9, 8, 0, 608, 452, 0, 0, 1, 0, 0, 0, 0, []],
+				[9, 8, 0, 321, 50, 0, 0, 1, 0, 0, 0, 0, []],
 				3,
 				3,
 				[
@@ -15888,7 +15888,7 @@ cr.getProjectModel = function() { return [
 ,		[
 			"UI",
 			1,
-			1489178926627539,
+			513751726328931,
 			true,
 			[255, 255, 255],
 			true,
@@ -15896,7 +15896,7 @@ cr.getProjectModel = function() { return [
 			0,
 			1,
 			false,
-			1,
+			0,
 			0,
 			0,
 			[
@@ -15922,6 +15922,13 @@ false,false,1230510640560827,false
 		]
 ,		[
 			1,
+			"TouchZoomID",
+			0,
+			-1,
+false,false,4643179619956066,false
+		]
+,		[
+			1,
 			"TouchLastX",
 			0,
 			0,
@@ -15933,6 +15940,20 @@ false,false,5784126775226514,false
 			0,
 			0,
 false,false,4462469493279042,false
+		]
+,		[
+			1,
+			"TouchStartDistance",
+			0,
+			0,
+false,false,3423384495792539,false
+		]
+,		[
+			1,
+			"InitialScale",
+			0,
+			0,
+false,false,3824474410479846,false
 		]
 ,		[
 			0,
@@ -15952,113 +15973,429 @@ false,false,4462469493279042,false
 				1358802375792862,
 				false
 			]
-,			[
-				-1,
-				cr.system_object.prototype.cnds.CompareVar,
-				null,
-				0,
-				false,
-				false,
-				false,
-				760842567554795,
-				false
-				,[
-				[
-					11,
-					"TouchPanID"
-				]
-,				[
-					8,
-					0
-				]
-,				[
-					7,
-					[
-						0,
-						-1
-					]
-				]
-				]
-			]
 			],
 			[
+			]
+			,[
 			[
-				-1,
-				cr.system_object.prototype.acts.SetVar,
+				0,
 				null,
-				6114902426785022,
-				false
-				,[
+				false,
+				null,
+				717294142161451,
 				[
-					11,
-					"TouchLastX"
+				[
+					-1,
+					cr.system_object.prototype.cnds.CompareVar,
+					null,
+					0,
+					false,
+					false,
+					false,
+					760842567554795,
+					false
+					,[
+					[
+						11,
+						"TouchPanID"
+					]
+,					[
+						8,
+						0
+					]
+,					[
+						7,
+						[
+							0,
+							-1
+						]
+					]
+					]
+				]
+				],
+				[
+				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					6114902426785022,
+					false
+					,[
+					[
+						11,
+						"TouchLastX"
+					]
+,					[
+						7,
+						[
+							20,
+							2,
+							cr.plugins_.Touch.prototype.exps.X,
+							false,
+							null
+							,[
+[
+								2,
+								"UI"
+							]
+							]
+						]
+					]
+					]
 				]
 ,				[
-					7,
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					8223965341698254,
+					false
+					,[
 					[
-						20,
-						2,
-						cr.plugins_.Touch.prototype.exps.X,
-						false,
-						null
-						,[
-[
+						11,
+						"TouchLastY"
+					]
+,					[
+						7,
+						[
+							20,
 							2,
-							"UI"
+							cr.plugins_.Touch.prototype.exps.Y,
+							false,
+							null
+							,[
+[
+								2,
+								"UI"
+							]
+							]
 						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					659279506720811,
+					false
+					,[
+					[
+						11,
+						"TouchPanID"
+					]
+,					[
+						7,
+						[
+							20,
+							2,
+							cr.plugins_.Touch.prototype.exps.TouchID,
+							false,
+							null
 						]
+					]
 					]
 				]
 				]
 			]
 ,			[
-				-1,
-				cr.system_object.prototype.acts.SetVar,
+				0,
 				null,
-				8223965341698254,
-				false
-				,[
+				false,
+				null,
+				4098442913654768,
 				[
-					11,
-					"TouchLastY"
+				[
+					-1,
+					cr.system_object.prototype.cnds.Else,
+					null,
+					0,
+					false,
+					false,
+					false,
+					3431874274627839,
+					false
 				]
 ,				[
-					7,
+					-1,
+					cr.system_object.prototype.cnds.CompareVar,
+					null,
+					0,
+					false,
+					false,
+					false,
+					4139461714622786,
+					false
+					,[
 					[
-						20,
-						2,
-						cr.plugins_.Touch.prototype.exps.Y,
-						false,
-						null
-						,[
-[
-							2,
-							"UI"
-						]
+						11,
+						"TouchZoomID"
+					]
+,					[
+						8,
+						0
+					]
+,					[
+						7,
+						[
+							0,
+							-1
 						]
 					]
+					]
 				]
-				]
-			]
-,			[
-				-1,
-				cr.system_object.prototype.acts.SetVar,
-				null,
-				659279506720811,
-				false
-				,[
+				],
 				[
-					11,
-					"TouchPanID"
+				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					1428997739403267,
+					false
+					,[
+					[
+						11,
+						"TouchZoomID"
+					]
+,					[
+						7,
+						[
+							20,
+							2,
+							cr.plugins_.Touch.prototype.exps.TouchID,
+							false,
+							null
+						]
+					]
+					]
 				]
 ,				[
-					7,
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					3117904265240802,
+					false
+					,[
 					[
-						20,
-						2,
-						cr.plugins_.Touch.prototype.exps.TouchID,
-						false,
-						null
+						11,
+						"TouchStartDistance"
+					]
+,					[
+						7,
+						[
+							19,
+							cr.system_object.prototype.exps.distance
+							,[
+[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.XForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchPanID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+,[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.YForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchPanID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+,[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.XForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchZoomID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+,[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.YForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchZoomID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+							]
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					8228213557672643,
+					false
+					,[
+					[
+						11,
+						"InitialScale"
+					]
+,					[
+						7,
+						[
+							19,
+							cr.system_object.prototype.exps.layoutscale
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					7737739041480805,
+					false
+					,[
+					[
+						11,
+						"TouchLastX"
+					]
+,					[
+						7,
+						[
+							7,
+							[
+								4,
+								[
+									20,
+									2,
+									cr.plugins_.Touch.prototype.exps.XForID,
+									false,
+									null
+									,[
+[
+										23,
+										"TouchPanID"
+									]
+,[
+										2,
+										"UI"
+									]
+									]
+								]
+								,[
+									20,
+									2,
+									cr.plugins_.Touch.prototype.exps.XForID,
+									false,
+									null
+									,[
+[
+										23,
+										"TouchZoomID"
+									]
+,[
+										2,
+										"UI"
+									]
+									]
+								]
+							]
+							,[
+								0,
+								2
+							]
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					1925308958016938,
+					false
+					,[
+					[
+						11,
+						"TouchLastY"
+					]
+,					[
+						7,
+						[
+							7,
+							[
+								4,
+								[
+									20,
+									2,
+									cr.plugins_.Touch.prototype.exps.YForID,
+									false,
+									null
+									,[
+[
+										23,
+										"TouchPanID"
+									]
+,[
+										2,
+										"UI"
+									]
+									]
+								]
+								,[
+									20,
+									2,
+									cr.plugins_.Touch.prototype.exps.YForID,
+									false,
+									null
+									,[
+[
+										23,
+										"TouchZoomID"
+									]
+,[
+										2,
+										"UI"
+									]
+									]
+								]
+							]
+							,[
+								0,
+								2
+							]
+						]
+					]
 					]
 				]
 				]
@@ -16096,6 +16433,34 @@ false,false,4462469493279042,false
 					[
 						0,
 						0
+					]
+				]
+				]
+			]
+,			[
+				-1,
+				cr.system_object.prototype.cnds.CompareVar,
+				null,
+				0,
+				false,
+				false,
+				false,
+				6788904042704479,
+				false
+				,[
+				[
+					11,
+					"TouchZoomID"
+				]
+,				[
+					8,
+					0
+				]
+,				[
+					7,
+					[
+						0,
+						-1
 					]
 				]
 				]
@@ -16141,13 +16506,7 @@ false,false,4462469493279042,false
 							]
 							,[
 								19,
-								cr.system_object.prototype.exps.layerscale
-								,[
-[
-									2,
-									"Main"
-								]
-								]
+								cr.system_object.prototype.exps.layoutscale
 							]
 						]
 					]
@@ -16184,13 +16543,7 @@ false,false,4462469493279042,false
 							]
 							,[
 								19,
-								cr.system_object.prototype.exps.layerscale
-								,[
-[
-									2,
-									"Main"
-								]
-								]
+								cr.system_object.prototype.exps.layoutscale
 							]
 						]
 					]
@@ -16262,6 +16615,424 @@ false,false,4462469493279042,false
 			null,
 			false,
 			null,
+			8744966022886563,
+			[
+			[
+				-1,
+				cr.system_object.prototype.cnds.CompareVar,
+				null,
+				0,
+				false,
+				false,
+				false,
+				229636673851178,
+				false
+				,[
+				[
+					11,
+					"TouchZoomID"
+				]
+,				[
+					8,
+					5
+				]
+,				[
+					7,
+					[
+						0,
+						0
+					]
+				]
+				]
+			]
+			],
+			[
+			]
+			,[
+			[
+				1,
+				"TouchCurrentDistance",
+				0,
+				0,
+false,false,9733510104223285,false
+			]
+,			[
+				1,
+				"TouchCurrentMidX",
+				0,
+				0,
+false,false,1093275304086245,false
+			]
+,			[
+				1,
+				"TouchCurrentMidY",
+				0,
+				0,
+false,false,2050313776683403,false
+			]
+,			[
+				0,
+				null,
+				false,
+				null,
+				1853820362689571,
+				[
+				],
+				[
+				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					5218979303221549,
+					false
+					,[
+					[
+						11,
+						"TouchCurrentMidX"
+					]
+,					[
+						7,
+						[
+							7,
+							[
+								4,
+								[
+									20,
+									2,
+									cr.plugins_.Touch.prototype.exps.XForID,
+									false,
+									null
+									,[
+[
+										23,
+										"TouchPanID"
+									]
+,[
+										2,
+										"UI"
+									]
+									]
+								]
+								,[
+									20,
+									2,
+									cr.plugins_.Touch.prototype.exps.XForID,
+									false,
+									null
+									,[
+[
+										23,
+										"TouchZoomID"
+									]
+,[
+										2,
+										"UI"
+									]
+									]
+								]
+							]
+							,[
+								0,
+								2
+							]
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					1452408382722571,
+					false
+					,[
+					[
+						11,
+						"TouchCurrentMidY"
+					]
+,					[
+						7,
+						[
+							7,
+							[
+								4,
+								[
+									20,
+									2,
+									cr.plugins_.Touch.prototype.exps.YForID,
+									false,
+									null
+									,[
+[
+										23,
+										"TouchPanID"
+									]
+,[
+										2,
+										"UI"
+									]
+									]
+								]
+								,[
+									20,
+									2,
+									cr.plugins_.Touch.prototype.exps.YForID,
+									false,
+									null
+									,[
+[
+										23,
+										"TouchZoomID"
+									]
+,[
+										2,
+										"UI"
+									]
+									]
+								]
+							]
+							,[
+								0,
+								2
+							]
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					3212067715072864,
+					false
+					,[
+					[
+						11,
+						"TouchCurrentDistance"
+					]
+,					[
+						7,
+						[
+							19,
+							cr.system_object.prototype.exps.distance
+							,[
+[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.XForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchPanID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+,[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.YForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchPanID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+,[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.XForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchZoomID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+,[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.YForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchZoomID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+							]
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetLayoutScale,
+					null,
+					3719752028254012,
+					false
+					,[
+					[
+						0,
+						[
+							6,
+							[
+								23,
+								"InitialScale"
+							]
+							,[
+								7,
+								[
+									23,
+									"TouchCurrentDistance"
+								]
+								,[
+									23,
+									"TouchStartDistance"
+								]
+							]
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.Scroll,
+					null,
+					8863360570728257,
+					false
+					,[
+					[
+						0,
+						[
+							5,
+							[
+								19,
+								cr.system_object.prototype.exps.scrollx
+							]
+							,[
+								7,
+								[
+									5,
+									[
+										23,
+										"TouchCurrentMidX"
+									]
+									,[
+										23,
+										"TouchLastX"
+									]
+								]
+								,[
+									19,
+									cr.system_object.prototype.exps.layoutscale
+								]
+							]
+						]
+					]
+,					[
+						0,
+						[
+							5,
+							[
+								19,
+								cr.system_object.prototype.exps.scrolly
+							]
+							,[
+								7,
+								[
+									5,
+									[
+										23,
+										"TouchCurrentMidY"
+									]
+									,[
+										23,
+										"TouchLastY"
+									]
+								]
+								,[
+									19,
+									cr.system_object.prototype.exps.layoutscale
+								]
+							]
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					6158592484633591,
+					false
+					,[
+					[
+						11,
+						"TouchLastX"
+					]
+,					[
+						7,
+						[
+							23,
+							"TouchCurrentMidX"
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					6225893896239014,
+					false
+					,[
+					[
+						11,
+						"TouchLastY"
+					]
+,					[
+						7,
+						[
+							23,
+							"TouchCurrentMidY"
+						]
+					]
+					]
+				]
+				]
+			]
+			]
+		]
+,		[
+			0,
+			null,
+			false,
+			null,
 			1848958852897267,
 			[
 			[
@@ -16275,55 +17046,343 @@ false,false,4462469493279042,false
 				480219321906777,
 				false
 			]
-,			[
-				-1,
-				cr.system_object.prototype.cnds.CompareVar,
-				null,
+			],
+			[
+			]
+			,[
+			[
 				0,
+				null,
 				false,
-				false,
-				false,
-				5587444593436808,
-				false
+				null,
+				5957948121193646,
+				[
+				[
+					-1,
+					cr.system_object.prototype.cnds.CompareVar,
+					null,
+					0,
+					false,
+					false,
+					false,
+					5587444593436808,
+					false
+					,[
+					[
+						11,
+						"TouchPanID"
+					]
+,					[
+						8,
+						0
+					]
+,					[
+						7,
+						[
+							20,
+							2,
+							cr.plugins_.Touch.prototype.exps.TouchID,
+							false,
+							null
+						]
+					]
+					]
+				]
+				],
+				[
+				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					7834167967098645,
+					false
+					,[
+					[
+						11,
+						"TouchPanID"
+					]
+,					[
+						7,
+						[
+							0,
+							-1
+						]
+					]
+					]
+				]
+				]
 				,[
 				[
-					11,
-					"TouchPanID"
-				]
-,				[
-					8,
-					0
-				]
-,				[
-					7,
+					0,
+					null,
+					false,
+					null,
+					9274456801273223,
 					[
-						20,
-						2,
-						cr.plugins_.Touch.prototype.exps.TouchID,
+					[
+						-1,
+						cr.system_object.prototype.cnds.CompareVar,
+						null,
+						0,
 						false,
-						null
+						false,
+						false,
+						6021203512422406,
+						false
+						,[
+						[
+							11,
+							"TouchZoomID"
+						]
+,						[
+							8,
+							5
+						]
+,						[
+							7,
+							[
+								0,
+								0
+							]
+						]
+						]
+					]
+					],
+					[
+					[
+						-1,
+						cr.system_object.prototype.acts.SetVar,
+						null,
+						715825450768966,
+						false
+						,[
+						[
+							11,
+							"TouchPanID"
+						]
+,						[
+							7,
+							[
+								23,
+								"TouchZoomID"
+							]
+						]
+						]
+					]
+,					[
+						-1,
+						cr.system_object.prototype.acts.SetVar,
+						null,
+						1965472339360149,
+						false
+						,[
+						[
+							11,
+							"TouchZoomID"
+						]
+,						[
+							7,
+							[
+								0,
+								-1
+							]
+						]
+						]
+					]
+,					[
+						-1,
+						cr.system_object.prototype.acts.SetVar,
+						null,
+						3192180798815368,
+						false
+						,[
+						[
+							11,
+							"TouchLastX"
+						]
+,						[
+							7,
+							[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.XForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchPanID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+						]
+						]
+					]
+,					[
+						-1,
+						cr.system_object.prototype.acts.SetVar,
+						null,
+						4079643292645087,
+						false
+						,[
+						[
+							11,
+							"TouchLastY"
+						]
+,						[
+							7,
+							[
+								20,
+								2,
+								cr.plugins_.Touch.prototype.exps.YForID,
+								false,
+								null
+								,[
+[
+									23,
+									"TouchPanID"
+								]
+,[
+									2,
+									"UI"
+								]
+								]
+							]
+						]
+						]
+					]
 					]
 				]
 				]
 			]
-			],
-			[
-			[
-				-1,
-				cr.system_object.prototype.acts.SetVar,
+,			[
+				0,
 				null,
-				7834167967098645,
-				false
-				,[
+				false,
+				null,
+				5295777269439014,
 				[
-					11,
-					"TouchPanID"
+				[
+					-1,
+					cr.system_object.prototype.cnds.CompareVar,
+					null,
+					0,
+					false,
+					false,
+					false,
+					4715562545880318,
+					false
+					,[
+					[
+						11,
+						"TouchZoomID"
+					]
+,					[
+						8,
+						0
+					]
+,					[
+						7,
+						[
+							20,
+							2,
+							cr.plugins_.Touch.prototype.exps.TouchID,
+							false,
+							null
+						]
+					]
+					]
+				]
+				],
+				[
+				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					9543698713768955,
+					false
+					,[
+					[
+						11,
+						"TouchZoomID"
+					]
+,					[
+						7,
+						[
+							0,
+							-1
+						]
+					]
+					]
 				]
 ,				[
-					7,
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					4351736987319497,
+					false
+					,[
 					[
-						0,
-						-1
+						11,
+						"TouchLastX"
+					]
+,					[
+						7,
+						[
+							20,
+							2,
+							cr.plugins_.Touch.prototype.exps.XForID,
+							false,
+							null
+							,[
+[
+								23,
+								"TouchPanID"
+							]
+,[
+								2,
+								"UI"
+							]
+							]
+						]
+					]
+					]
+				]
+,				[
+					-1,
+					cr.system_object.prototype.acts.SetVar,
+					null,
+					6372147853421454,
+					false
+					,[
+					[
+						11,
+						"TouchLastY"
+					]
+,					[
+						7,
+						[
+							20,
+							2,
+							cr.plugins_.Touch.prototype.exps.YForID,
+							false,
+							null
+							,[
+[
+								23,
+								"TouchPanID"
+							]
+,[
+								2,
+								"UI"
+							]
+							]
+						]
+					]
 					]
 				]
 				]
@@ -16362,12 +17421,33 @@ false,false,4462469493279042,false
 					[
 						10,
 						[
-							2,
-							"Panning with touch ID: "
+							10,
+							[
+								10,
+								[
+									10,
+									[
+										2,
+										"Panning with touch ID: "
+									]
+									,[
+										23,
+										"TouchPanID"
+									]
+								]
+								,[
+									19,
+									cr.system_object.prototype.exps.newline
+								]
+							]
+							,[
+								2,
+								"Zooming with touch ID: "
+							]
 						]
 						,[
 							23,
-							"TouchPanID"
+							"TouchZoomID"
 						]
 					]
 				]

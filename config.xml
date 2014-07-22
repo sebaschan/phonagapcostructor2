@@ -2,8 +2,8 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.sero.touch" version="1.0.0.0">
 
 	<name>New project</name>
-	<description>asdddd</description>
-	<author></author>
+	<description>asdddddddd</description>
+	<author>as</author>
 
 	<icon src="icon-128.png" width="128" height="128" />
 	<icon src="icon-256.png" width="256" height="256" gap:role="default" />
