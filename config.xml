@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.prueba.phonegap" version="1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.sero.touch" version="1.0.0.0">
 
-	<name>Prueba Phonegap</name>
-	<description>Prueba Phonegap</description>
-	<author>Sero</author>
+	<name>New project</name>
+	<description>asdddd</description>
+	<author></author>
 
 	<icon src="icon-128.png" width="128" height="128" />
 	<icon src="icon-256.png" width="256" height="256" gap:role="default" />
@@ -11,7 +11,7 @@
 	<preference name="permissions" value="none"/>
 
 	<feature name="http://api.phonegap.com/1.0/network"/>
-	<preference name="orientation" value="landscape" />
+	<preference name="orientation" value="default" />
 	<preference name="fullscreen" value="true" />
 	<preference name="target-device" value="universal" />
 
